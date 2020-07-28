@@ -3,7 +3,7 @@ import React from 'react';
 import 'tachyons';
 import './Hello.css';
 
-class Hello extends React.Component {
+class Hello extends React.Componenta {
 	render() {
 		return (
 			<div className = "f1 tc bg-yellow">
