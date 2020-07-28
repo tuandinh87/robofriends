@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Hello from './Hello';
+//import Card from './Card';
+import CardList from './CardList'; // A parent of Card
 import * as serviceWorker from './serviceWorker';
+import { robots } from './robots'; //If we have another variable, the import should look like this import {robots, cats, dogs} from './robots'.
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hello />
+    <CardList robots = {robots} />
   </React.StrictMode>,
   document.getElementById('root')
 );
