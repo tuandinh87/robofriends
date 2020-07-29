@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './containers/App';
 //import Card from './Card';
-import CardList from './CardList'; // A parent of Card
+//import CardList from './CardList'; // A parent of Card
 import * as serviceWorker from './serviceWorker';
-import { robots } from './robots'; //If we have another variable, the import should look like this import {robots, cats, dogs} from './robots'.
+//import { robots } from './robots'; //If we have another variable, the import should look like this import {robots, cats, dogs} from './robots'.
 
 ReactDOM.render(
   <React.StrictMode>
-    <CardList robots = {robots} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
